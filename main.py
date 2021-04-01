@@ -152,6 +152,7 @@ commands = {
 signal.signal(signal.SIGINT, signal_handler)
 gnureadline.parse_and_bind("tab: complete")
 gnureadline.set_completer(completer)
+print("start")
 
 while True:
     pc.printout("Run a command: ", pc.YELLOW)
